@@ -1,0 +1,15 @@
+{
+  "name": "playbulb-giga-pulser",
+  "version": "1.0.0",
+  "description": "Pulse your Playbulbs to audio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "indirection",
+  "license": "ISC",
+  "dependencies": {
+    "@abandonware/noble": "^1.9.2-9",
+    "@johnf/pulseaudio2": "^0.3.0"
+  }
+}
