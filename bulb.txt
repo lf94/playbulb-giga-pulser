@@ -1,0 +1,47 @@
+Device C5:D4:4B:14:AC:E6 crystal ball
+
+0000ffff-0000-1000-8000-00805f9b34fb output:
+63 72 79 73 74 61 6c 20 62 61 6c 6c
+c  r  y  s  t  a  l     b  a  l  l
+
+00002a28-0000-1000-8000-00805f9b34fb output:
+Application version 2.4.5.13
+
+00002a27-0000-1000-8000-00805f9b34fb output:
+CSR101x A05
+
+00002a25-0000-1000-8000-00805f9b34fb output:
+SPHERE MESH
+
+NOTE: COMMANDS MUST BE 16-bit ALIGNED / EVEN BYTES. PADDING AT THE FRONT.
+
+3 byte command -> 1 byte of padding at the front!
+
+0x00, r, g, b - as an example.
+
+service for below: 0000ff0f-0000-1000-8000-00805f9b34fb
+
+set color: handle: 0x0029 : UUID 0000fffc-0000-1000-8000-00805f9b34fb
+format: rgb (8-bit channels)
+
+set mode: handle: 0x0026 value handle: 0x0027 : UUID 0000fffb-0000-1000-8000-00805f9b34fb
+format: r, g, b, T, 00, S, 00
+
+T: type
+0: blink (has S1)
+1: pulse (has S2)
+2: rainbow
+3: slow rainbow pulse
+4: candle flicker
+5+: solid
+
+S1:
+0: solid
+1: ultra fast
+2: very fast
+etc
+
+S2: speed
+0: slow
+1-X: fast to slow
+

@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@abandonware/noble": "^1.9.2-9",
-    "@johnf/pulseaudio2": "^0.3.0"
+    "@johnf/pulseaudio2": "^0.3.0",
+    "jsfft": "0.0.4"
   }
 }
